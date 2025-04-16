@@ -1,4 +1,4 @@
-# API Proyecto
+# API Proyect
 
 ## 📁**Description**
 This project is an **API-based application** designed to handle data operations and provide an interface for interacting with a backend system. It is built using **Python** and **Flask**, with the purpose of simplifying data manipulation and offering easy access to the backend via a RESTful API.
