@@ -28,6 +28,16 @@ This project provides an API interface for predicting diamond prices using machi
 
 ## 📂 Project Structure
 
+📁 project/
+├── model.pkl              # Trained diamond price prediction model
+├── train.json             # Training data in JSON
+├── test.json              # Test data in JSON
+├── predictions.json       # Model predictions
+├── api/                   # API endpoints
+│   ├── routes.py          # API routes for data filtering and predictions
+│   └── ...
+└── README.md              # This file
+
 ---
 
 ## 🔮 Potential Future Applications
