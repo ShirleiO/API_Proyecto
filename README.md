@@ -1,3 +1,33 @@
+# 💎 Diamond Price Prediction API
+
+This project provides an API interface for predicting diamond prices using machine learning. It was developed using a structured dataset of diamond features, a trained regression model, and integrated with interactive tools for querying and visualization.
+
+---
+
+## 🚀 Features
+
+- **Train/Test Split**: Dataset split into training and test subsets for model evaluation.
+- **Model Deployment**: A regression model was trained and saved using `pickle`.
+- **JSON Integration**: Unified data frames (train, test, predictions) stored in JSON format.
+- **API Routes**:
+  - Serve different datasets (Train, Test, Predictions)
+  - Filter by **Color** and **Cut**
+- **Interactive Queries**: Demonstrated with [Gamma.app](https://gamma.app) for testing and interaction.
+
+---
+
+## 📦 Tech Stack
+
+- **Python** – Data manipulation and backend development
+- **Pandas** – Data processing
+- **Scikit-learn** *(assumed)* – Model training
+- **Pickle** – Model serialization
+- **JSON** – Standard data format for API and storage
+- **API Framework** – (e.g., Flask or FastAPI – inferred, not specified)
+
+---
+
+## 📂 Project Structure
 
 ---
 
