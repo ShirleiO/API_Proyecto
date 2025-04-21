@@ -61,5 +61,3 @@ This project provides an API interface for predicting diamond prices using machi
 - `/filter?color=X&cut=Y` - Returns filtered diamonds
 
 ---
-
-Let me know if you’d like the actual Python API code scaffolded or if you want this README in Markdown format ready to paste into your GitHub repo!
