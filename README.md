@@ -12,7 +12,6 @@ This project provides an API interface for predicting diamond prices using machi
 - **API Routes**:
   - Serve different datasets (Train, Test, Predictions)
   - Filter by **Color** and **Cut**
-- **Interactive Queries**: Demonstrated with [Gamma.app](https://gamma.app) for testing and interaction.
 
 ---
 
@@ -20,10 +19,10 @@ This project provides an API interface for predicting diamond prices using machi
 
 - **Python** – Data manipulation and backend development
 - **Pandas** – Data processing
-- **Scikit-learn** *(assumed)* – Model training
+- **Scikit-learn** – Model training
 - **Pickle** – Model serialization
 - **JSON** – Standard data format for API and storage
-- **API Framework** – (e.g., Flask or FastAPI – inferred, not specified)
+- **API Framework** – (Flask)
 
 ---
 
