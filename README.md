@@ -51,11 +51,6 @@ This project provides an API interface for predicting diamond prices using a mac
 
 ---
 
-## 🔗 Demo
-
-Try out the project interactively on [Gamma.app](https://gamma.app)
-
----
 
 ## 🛠️ Getting Started
 
