@@ -1,7 +1,3 @@
-Based on the contents of the provided PDF (`API_Diamantes._pdf.pdf`), here's a proposed **README.md** for a GitHub repository. It summarizes what was used in the project, the structure, and possible future applications.
-
----
-
 # 💎 Diamond Price Prediction API
 
 This project provides an API interface for predicting diamond prices using machine learning. The system was developed around a dataset of diamond features, trained with a predictive model, and deployed with a focus on usability and future scalability.
