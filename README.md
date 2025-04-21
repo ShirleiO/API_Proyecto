@@ -1,65 +1,75 @@
 # 💎 Diamond Price Prediction API
 
-This project provides an API interface for predicting diamond prices using machine learning. It was developed using a structured dataset of diamond features, a trained regression model, and integrated with interactive tools for querying and visualization.
+This project provides an API interface for predicting diamond prices using a machine learning model trained on a comprehensive dataset of diamond features. It includes data cleaning, model training, serialization, and an API for querying predictions or filtered data.
 
 ---
 
 ## 🚀 Features
 
-- **Train/Test Split**: Dataset split into training and test subsets for model evaluation.
-- **Model Deployment**: A regression model was trained and saved using `pickle`.
-- **JSON Integration**: Unified data frames (train, test, predictions) stored in JSON format.
-- **API Routes**:
-  - Serve different datasets (Train, Test, Predictions)
-  - Filter by **Color** and **Cut**
+- **Data Handling**: Preprocessing includes handling missing values and encoding categorical variables like cut, color, and clarity.
+- **Model Training**: Built with regression algorithms (e.g., Linear Regression or Random Forest) using scikit-learn.
+- **Model Persistence**: The trained model is saved with `pickle` for reuse in the API.
+- **API Endpoints**: Access training data, test data, predictions, and filtered results.
+- **Interactive Querying**: Integrates with [Gamma.app](https://gamma.app) for dynamic exploration.
 
 ---
 
 ## 📦 Tech Stack
 
-- **Python** – Data manipulation and backend development
-- **Pandas** – Data processing
-- **Scikit-learn** – Model training
+- **Python** – Core programming language
+- **Pandas** – Data manipulation
+- **Scikit-learn** – Machine learning
 - **Pickle** – Model serialization
-- **JSON** – Standard data format for API and storage
-- **API Framework** – (Flask)
+- **Flask** – Web framework for building the API
+- **JSON** – Data format for requests/responses
 
 ---
 
-## 📍 Example Endpoints
+## 📂 Project Structure
 
-- `GET /train` – Returns training dataset
-- `GET /test` – Returns test dataset
-- `GET /predictions` – Returns predicted diamond prices
-- `GET /filter?color=G&cut=Ideal` – Filter diamonds by attributes
+📁 project/ ├── modelo_diamantes.ipynb # Jupyter notebook for training and preprocessing ├── model.pkl # Serialized ML model ├── train.json # Training data ├── test.json # Test data ├── predictions.json # Prediction results ├── api/ │ ├── app.py # Main Flask app │ └── routes.py # API endpoints └── README.md # Project documentation
+
 
 ---
 
 ## 🔮 Potential Future Applications
 
-- **E-commerce**: Price calculators and smart filters for diamond shopping.
-- **Market Analytics**: Tools for identifying pricing trends in the gem industry.
-- **Education**: Use case for teaching regression and API deployment.
-- **Model Evolution**: Incorporate new training data and dynamic updates.
-- **Extended Filtering**: Add parameters like **Clarity**, **Carat**, or **Certification**.
+- 💍 **E-commerce**: Use for dynamic diamond pricing on online marketplaces.
+- 📊 **Business Intelligence**: Analyze trends in diamond pricing based on features.
+- 🧠 **Educational**: Demonstrate ML pipelines and API building in classrooms.
+- ⚙️ **Automation**: Retrain the model regularly with new data.
+- 🔍 **Advanced Filters**: Expand filters to include clarity, carat, price range, etc.
 
 ---
 
-## 🔗 Related Tools
+## 📍 API Endpoints
 
-- [Gamma.app](https://gamma.app) – Used for query demonstrations and data visualization.
+- `GET /train` – Returns training dataset
+- `GET /test` – Returns test dataset
+- `GET /predictions` – Returns predictions from the model
+- `GET /filter?color=G&cut=Ideal` – Returns diamonds filtered by color and cut
 
 ---
 
-## 🛠️ Getting Started (Example)
+## 🔗 Demo
+
+Try out the project interactively on [Gamma.app](https://gamma.app)
+
+---
+
+## 🛠️ Getting Started
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/diamond-price-api.git
-cd diamond-price-api
+git clone https://github.com/ShirleiO/API_Proyecto.git
+cd API_Proyecto
 
-# Install dependencies (example if using Flask)
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install requirements
 pip install -r requirements.txt
 
-# Run the app
-python app.py
+# Run the Flask app
+python api/app.py
